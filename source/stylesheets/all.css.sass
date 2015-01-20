@@ -1,8 +1,11 @@
 // Font
-@import url(http://fonts.googleapis.com/css?family=Glegoo)
+@import url(http://fonts.googleapis.com/css?family=Glegoo|Bad+Script)
 
 // Colors
-$blue: #06C
+$light-green: #66cc66
+$green: #17ad49
+$blue: #b6deff
+$black: #000
 
 body
   margin: 0
@@ -11,11 +14,36 @@ body
     size: 16px
     family: 'Glegoo', serif
   line-height: 30px
+  color: lighten($black, 35%)
+
+section
+  padding: 30px 0
 
 a
-  color: $blue
+  color: $green
   text-decoration: none
+  border-bottom: 1px dotted $green
+
+h1
+  color: $light-green
+  span
+    color: lighten($black, 35%)
 
 .hello
   max-width: 700px
   margin: 0 auto
+
+footer
+  span
+    display: block
+    margin-top: 15px
+    font:
+      family: 'Bad Script', cursive
+      size: 30px
+
+@media (max-width: 600px)
+  body
+    font-size: 14px
+  article
+    padding: 15px
+    box-sizing: border-box
