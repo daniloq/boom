@@ -1,2 +1,2 @@
-//= require_jquery.tooltipster
+//= require jquery.tooltipster
 //= require_tree .

@@ -32,10 +32,17 @@
       I like to get things thought out, done right, and delivered on-time with constantly and quality.
     %p
       I think Chicago is a beautiful city, but I would love the opportunity to give Jacksonville, FL just a little bit more app cred by representing Basecamp. P.S. I've been a die hard
-      = link_to "Bulls", "/images/go-bulls.jpg"
+      = link_to "Bulls", "/images/go-bulls.jpg", class: "tooltip", title: "Go Bulls!"
       fan since I was 5 years old.
 
   %footer
     Respectively,
     %span
       Danilo K. Quilaton, Jr.
+
+:javascript
+  $(document).ready(function() {
+    $('.tooltip').tooltipster({
+      content: $('<img src="/images/go-bulls.jpg" />')
+    });
+  });
