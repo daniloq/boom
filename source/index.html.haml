@@ -1,11 +1,7 @@
 %section.hello
   %article
     %h1
-      %span Hello
-      Mig
-      %span &amp;
-      Basecamp,
-    %p
+    %p.fade
       My name is
       = link_to "Danilo Quilaton.", "http://www.daniloquilaton.com/", target: "_blank"
       I'm currently working in Jacksonville, FL for Adecco's
@@ -21,7 +17,7 @@
         But!.....
       I would love to join the Basecamp team. I was inspired in Mig and Javan's workshop at
       = link_to "KYN", "http://kyn.is/", target: "_blank"
-      and humbled in their talk about how designers and devs work together at Basecamp. And I'm pretty sure I beat Basecamp's shuffleboard champ, Javan, at shuffleboard at the last Brooklyn Beta. I've used your products religiously over the last 8+ years working as a designer, and judging by my little interactive with your team, Basecamp seems like the job I need. When I found your We Work Remotely job post today, I couldn't wait to spin up a
+      and humbled in their talk about how designers and devs work together at Basecamp. And I'm pretty sure I beat Basecamp's shuffleboard champ, Javan, at shuffleboard at the last Brooklyn Beta. I've used your products religiously over the last 8+ years working as a designer, and judging by my little interaction with your team, Basecamp seems like the job I need. When I found your We Work Remotely job post today, I couldn't wait to spin up a
       = link_to "Middleman app", "https://github.com/daniloq/hire-me", target: "_blank"
       and knock out a quick page to send ya'lls way.
     %p
@@ -45,4 +41,6 @@
     $('.tooltip').tooltipster({
       content: $('<img src="/images/go-bulls.jpg" />')
     });
+    $("p, footer").hide(0).delay(3000).fadeIn(1000);
   });
+  $('h1').typeTo("Dear Mig and Basecamp,");
